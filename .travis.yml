@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -t subodh15/deockerreact:latest -f Dockerfile.dev .
 script:
-  - docker run subodh15/dockerreact npm run test -- --coverage
+  - docker run subodh15/dockerreact:latest npm run test -- --coverage
